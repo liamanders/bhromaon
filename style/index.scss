@@ -1,0 +1,26 @@
+@use 'fonts';
+
+@import 'header';
+
+
+body {
+    margin: 0 auto;
+}
+
+button {
+    border: none;
+    background: linear-gradient(45deg, var(--clr-primary-400), var(--clr-secondary-500));
+    color: white;
+    padding: 0.5rem 1rem;
+    width: 13rem;
+    height: 3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: fonts.$secondry-font;
+    
+    &:hover {
+        background: var(--clr-secondary-500);
+    }
+}
