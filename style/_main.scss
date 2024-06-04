@@ -1,0 +1,47 @@
+.why-choose-us {
+    background-image: url(../images/bg2.png);
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-blend-mode: overlay;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: fonts.$main-font;
+}
+
+.info-container {
+    max-width: 34rem;
+
+    & h2 {
+        font-family: fonts.$secondry-font;
+        padding-bottom: 2rem;
+        font-size: 2rem;
+    }
+    & p {
+        padding-bottom: 2rem;
+        font-weight: 200;
+        letter-spacing: 2px;
+    }
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+
+    & img {
+        max-width: 300px;
+        padding: 4px;
+    }
+
+    & .img1 {
+        align-self: flex-start;
+    }
+    & .img2 {
+        align-self: flex-end;
+    }
+}
