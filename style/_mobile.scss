@@ -1,6 +1,6 @@
 
 
-@media (max-width: 992px) { 
+@media (max-width: 576px) { 
     body {
         max-width: 100%;
         margin: 0 auto;
@@ -18,16 +18,24 @@
         margin-bottom: -4rem; 
         
         & h1 {
-            font-size: 2.5rem; 
+            font-size: 1.5rem; 
         }
         & h3 {
-            font-size: 1.2rem; 
+            font-size: 1rem; 
             letter-spacing: 3px; 
         }
     }
     
+    .search-container {
+        width: 80%;
+    }
+
+    .search-form {
+        flex-direction: column;
+        border: none;
+    }
     .search-form input {
-        width: 15rem;  
+        width: 100%;  
 
         &::placeholder {
             font-size: 12px;
@@ -36,7 +44,7 @@
     
     .search-form button {
         padding: 0.3rem 0.8rem; 
-        height: 2.5rem;        
+        height: 2.5rem;    
     }
     .scroll-btn {
         display: none;
@@ -83,27 +91,29 @@
     .travel-with-us,
     .travel-with-us2 {
         height: auto;
+        flex-direction: column;
     }
     
     .info-container,
     .info-container2,
     .info-container3 {
         max-width: 60%;
+        height: auto;
         margin: 3rem;
 
         & h2 {
-            padding-bottom: 2rem;
+            padding-bottom: 1rem;
             font-size: 1.4rem;
         }
         & h4 {
             color: white;
             font-size: 1.4rem;
-            padding-bottom: 2rem;
+            padding-bottom: 1rem;
         }
         & p {
-            padding-bottom: 2rem;
+            padding-bottom: 1rem;
             font-weight: 400;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             line-height: 1.6rem;
         }
     }
@@ -112,7 +122,7 @@
         width: auto;
         margin: 2rem;
         & img {
-            max-width: 150px;
+            max-width: 250px;
         }
     }
     .book-btn {
@@ -136,12 +146,13 @@
     }
     
     .reviews {
-        min-height: 130vh;
+        min-height: 200vh;
+        max-width: 100%;
         justify-content: start;
 
         & h2 {
             margin-top: 2.3rem;
-            font-size: 2rem;
+            font-size: 1.3rem;
             font-family: fonts.$secondry-font;
             padding-bottom: 2rem;
         }
@@ -153,7 +164,7 @@
         align-items: center;
 
         & img {
-            width: 20rem;
+            max-width: 80%;
         }
     }
     
@@ -162,3 +173,4 @@
         margin-top: 1rem;
     }
   }
+    
