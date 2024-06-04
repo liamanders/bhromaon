@@ -4,8 +4,11 @@
 @import 'main';
 @import 'footer';
 
+@import 'tablet';
+
 body {
-    margin: 0 auto;
+    margin: 0rem auto;
+    max-width: 100%;
 }
 
 button {
